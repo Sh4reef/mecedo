@@ -28,6 +28,9 @@ class _AccountScreenState extends State<AccountScreen> {
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Column(
             children: [
+              SizedBox(
+                height: 21,
+              ),
               Container(
                   padding: const EdgeInsets.only(
                       left: 14, right: 14, top: 18, bottom: 34),
