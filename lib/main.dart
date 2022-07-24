@@ -5,6 +5,8 @@ import 'package:mecedo/screens/chats_screen/chats_screen.dart';
 import 'package:mecedo/screens/home_screen/home_screen.dart';
 import 'package:mecedo/widgets/app_bottom_navigation_bar/app_bottom_navigation_bar.dart';
 
+const testEnv = String.fromEnvironment('TEST_ENV');
+
 void main() {
   runApp(const App());
 }
@@ -46,7 +48,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: testEnv,
       theme: ThemeData(
         primaryColor: const Color(primaryColor),
         fontFamily: 'poppins',
